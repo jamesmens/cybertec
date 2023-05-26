@@ -1,0 +1,515 @@
+@media only screen and (max-width: 600px) {
+    .introduction_content_pic {
+        display: none;
+    }
+
+    .mediaTab {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        top: 0;
+        width: 95%;
+    }
+
+    .l_introduction {
+        top: 0;
+        margin-top: -100px;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+    }
+
+    .l_hand {
+        display: none !important;;
+        transition: 1s ease-in-out;
+        margin-right: 100px;
+
+
+
+    }
+
+    .HandIndexThumb {
+
+        transform: rotate(180deg);
+        -webkit-animation: hand_anim 3s infinite;
+
+    }
+
+
+    .l_menu_container {
+        position: fixed;
+        z-index: 10000;
+        width: 100%;
+        top: 0;
+        background: rgba(255, 0, 179, 0);
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        -webkit-animation: showmenu 1s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+    .l_menu_motion {
+        transition: 0.6s ease-in-out;
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+
+    .l_menu_container_click {
+        width: 30%;
+        height: 100%;
+    }
+
+    .l_menu_layout {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(225, 225, 225);
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+        font-family: Roboto condensed;
+
+        font-size: 9px;
+        color: rgb(5, 175, 133);
+        font-weight: bold;
+
+    }
+
+    .l_menu_layout p {
+
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    .l_menu_layout span {
+
+        font-family: Roboto condensed;
+        font-weight: lighter;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 2px solid rgb(5, 175, 133);
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .profile_stick {
+        display: none;
+    }
+
+    .l_contactstick {
+        display: none;
+    }
+
+    .introduction_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        position: relative;
+        width: 95%;
+        height: 350px;
+        padding: 20px;
+
+
+
+
+    }
+
+    .introduction_content_p {
+        position: absolute;
+        width: 100%;
+
+        justify-content: left;
+        padding-left: 0;
+        padding-right: 5px;
+
+    }
+
+    .l_content_intro {
+        font-family: Roboto Condensed;
+        font-size: 19px;
+        font-weight: bold;
+        color: rgb(57, 54, 80);
+        transform: translateX(0%);
+        -webkit-animation: contentapperI 1s ease-in-out;
+        animation: contentapperI 1s ease-in-out;
+        padding-left: 10px;
+
+
+
+    }
+
+    .l_content_intro span {
+        color: rgb(5, 175, 133);
+
+
+    }
+
+    .l_content_name {
+        font-family: Roboto Condensed;
+        font-size: 24px;
+        font-weight: bolder;
+        color: rgb(57, 54, 80);
+        transform: translateX(0%);
+        -webkit-animation: contentapper 1s ease-in-out;
+        animation: contentapper 1s ease-in-out;
+        padding-left: 10px;
+    }
+
+    .l_brief_swip {
+        padding-left: 20px;
+    }
+
+
+
+    .introduction_content_pic_m {
+        display: flex;
+        position: relative;
+        transition: 0.5s ease-in-out;
+        width: 400px;
+        height: 400px;
+        margin-top: 40px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduction_content_pic_frame {
+        transition: 0.5s ease-in-out;
+        width: 250px;
+        height: 200px;
+        background: rgba(3, 161, 3, 0);
+        border-radius: 5px;
+        border: 2.3px solid rgb(35, 22, 155);
+        margin-left: 35px;
+        margin-top: 35px;
+    }
+
+    .myprofile_front {
+
+        border-radius: 5px;
+        width: 250px;
+        height: 250px;
+        box-shadow: 1px 2px 6px 1px rgb(165, 160, 160);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+
+    }
+
+    .l_introduction_s {
+
+        margin-bottom: 50px;
+
+    }
+
+    .l_brief_swip {
+        margin-top: 40px;
+        font-family: Roboto Condensed;
+        font-size: 27px;
+        font-weight: bold;
+
+
+    }
+
+    .l_skill_a_introS {
+        display: none;
+    }
+
+    .l_skill_a_introM {
+        display: flex
+    }
+
+
+
+    .l_brief_swip span {
+        font-weight: bold;
+        font-size: 33px;
+        color: rgb(5, 175, 133);
+
+    }
+
+    .l_skill_content {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        min-height: 500px;
+        margin-top: 5px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .l_skill_a {
+
+        width: 100%;
+        padding: 10px;
+        font-family: Roboto condensed;
+
+        font-weight: lighter;
+        font-size: 19px;
+        color: rgb(57, 54, 80);
+
+    }
+
+    .l_skill_a_intro {
+        font-family: Roboto condensed;
+        font-size: 16px;
+        color: rgb(10, 9, 56);
+    }
+
+    .l_skill_sw {
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        min-height: 400px;
+
+    }
+
+    .l_tool_c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        height: 40px;
+        box-shadow: 1px 2px 6px 1px rgb(230, 230, 230);
+        background-color: white;
+        border-radius: 3px;
+        font-family: Roboto condensed;
+        font-size: 14px;
+        color: rgb(91, 88, 112);
+        font-weight: bold;
+    }
+
+    .l_skill_h {
+
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+
+
+
+    .l_experience_c {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 90%;
+        height: 100%;
+        padding: 40px;
+    }
+
+    .l_experience_c img {
+        width: 100%;
+        height: auto;
+    }
+
+    .l_experience_c_p {
+        width: 100%;
+
+
+    }
+
+
+    .l_experience_text {
+        font-family: Roboto condensed;
+        font-size: 15px;
+        color: rgb(64, 61, 80);
+        padding-left: 10px;
+        margin-top: -10px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+    .work_space {
+        margin-bottom: 50px;
+    }
+
+    .l_work_pl {
+        width: 80%;
+        min-height: 400px;
+        background: rgba(3, 161, 3, 0);
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+        position: absolute;
+        padding: 10px;
+    }
+
+    .l_work_p {
+        width: 80%;
+        min-height: 400px;
+        background: rgba(3, 161, 3, 0);
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        position: absolute;
+        padding: 10px;
+    }
+
+    .l_work_p_link {
+        padding: 10px;
+        margin-top: -35px;
+    }
+
+    .l_work_p_toolsl p {
+
+        color: rgb(5, 175, 133);
+        font-family: Roboto condensed;
+        font-size: 12px;
+        padding: 10px;
+        font-weight: bold;
+
+
+    }
+
+    .l_work_p_n {
+        color: rgb(5, 175, 133);
+        font-family: Roboto condensed;
+        font-size: 16px;
+
+        font-weight: bold;
+    }
+
+
+    .l_work_p_c {
+        min-height: 100px;
+        background-color: rgb(5, 175, 133);
+        border-radius: 5px;
+        box-shadow: 1px 2px 4px 1px rgb(165, 160, 160);
+        padding: 12px;
+        color: rgb(253, 253, 253);
+        font-family: Roboto condensed;
+        font-size: 12px;
+        z-index: 200;
+
+    }
+
+    .l_footer_p {
+        font-family: Roboto condensed;
+        font-size: 18px;
+
+    }
+
+    .l_work_image {
+        width: 100%;
+        min-height: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        box-shadow: 1px 2px 6px 1px rgb(165, 160, 160);
+        border-radius: 5px;
+    }
+
+    .l_work_image_b {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(1, 6, 3);
+        opacity: 0.7;
+        transition: 1s ease-in-out;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .introduction_content_pic_m {
+        margin-top: -40px;
+        margin-bottom: -40px;
+    }
+
+    .l_footer_header{
+        font-family: Roboto condensed;
+        font-weight: bold;
+        color:    rgb(5, 175, 133);
+        font-size:25px;
+    }
+    .HandIndexThumb_footer {
+        transition: 1s ease-in-out;
+        transform: rotate(90deg);
+        -webkit-animation: hand_anim_m 3s infinite;
+        background-color: red;
+        display: none;
+
+    }
+.l_footer_header{
+    font-family: Roboto condensed;
+    font-weight: bold;
+    color:    rgb(5, 175, 133);
+    font-size: 40px;
+}
+    @keyframes hand_anim_m {
+        0% {
+            transform: translateX(-5%) rotate(90deg);
+        }
+
+        100% {
+            transform: translateX(10%) rotate(90deg);
+        }
+
+    }
+
+    @keyframes hand_anim {
+        0% {
+            transform: translateY(-5%) rotate(180deg);
+        }
+
+        100% {
+            transform: translateY(20%) rotate(180deg);
+        }
+
+    }
+
+    @keyframes showmenu {
+        0% {
+            transform: translateX(40%);
+        }
+
+
+    }
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 395px) {
+    .introduction_content_pic_frame {
+        transition: 0.5s ease-in-out;
+        width: 200px;
+        height: 200px;
+        background: rgba(3, 161, 3, 0);
+        border-radius: 5px;
+        border: 2.3px solid rgb(35, 22, 155);
+        margin-left: 35px;
+        margin-top: 35px;
+    }
+
+    .myprofile_front {
+
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+        box-shadow: 1px 2px 6px 1px rgb(165, 160, 160);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+
+    }
+
+    .introduction_content_pic_m {
+        margin-top: -50px;
+        margin-bottom: -100px;
+    }
+
+
+}

@@ -1,0 +1,181 @@
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  width: 100%;
+  height: 100%;
+  background-color: rgb(65, 65, 65);
+}
+
+.maintop {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 90%;
+  background-color: rgb(27, 27, 27);
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+.navcontainer{
+    display: flex;
+    height: 100%;
+    
+
+}
+.sitename{
+    font-family:Roboto condensed;
+    color: rgb(227, 252, 233);
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    
+}
+.navspan{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(134, 134, 132);
+    color: white;
+    font-family: Roboto condensed;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 20px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+
+    
+}
+.navspan:hover{
+    border: 1.5px solid rgb(156, 152, 152);
+    transition: 1s ease-in-out;
+    background-color: rgb(43, 37, 37);
+
+}
+.homeContent{
+background-color: rgb(24, 25, 63);
+margin: 15px;
+border-radius: 10px;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+background-size: contain;
+ height: 600px;
+}
+
+.hcontent_l {
+    font-family: Roboto condensed;
+
+
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+}
+.hcontent_l p{
+    font-family: Roboto condensed;
+   color: rgb(255, 255, 255);
+    font-size: 30px;
+
+    
+    padding: 20px 20px 0px 10px;
+}
+.hcontent_l_intro{
+    display: flex;
+    flex-direction: column;
+
+    font-family: Roboto condensed;
+   color: rgb(10, 43, 27);
+    font-size: 16px;
+    background-color:  hsla(0, 0%, 0%, 0); 
+    border-radius: 5px;
+    padding: 20px 20px 20px 10px;
+    transition: 1s ease-in-out;
+
+    
+}
+.membershipbtn{
+    border: 1px solid blue;
+    border-radius: 5px ;
+    padding: 10px 20px 10px 20px;
+    width: 35%;
+    margin-top: 10px;
+    color: white;
+}
+.hcontent_l_intro:hover{
+
+
+    background-color: rgba(173, 227, 231, 0.5);
+  
+    transition: 1s ease-in-out;
+    
+}
+.hcontent_r{
+    
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+.lform{
+    width: 300px;
+    height: 480px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 2px rgb(235, 231, 231);
+}
+.rform{
+   
+    width: 300px;
+    height: 480px;
+    margin-left: -100px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 8px 2px rgb(61, 61, 61);
+    background-color: white;
+    font-family: Roboto condensed;
+    padding: 5px;
+}
+.rform p{
+    color: rgb(7, 7, 26);
+    font-size: 20px;
+}
+.uploadicon{
+    border: 1px solid blue;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.uploadspace{
+    width: 95%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(238, 227, 227);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(36, 35, 35);
+  font-family: Roboto condensed;
+  color: white;
+  
+  font-size: 18px;
+}
