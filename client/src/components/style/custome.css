@@ -5,7 +5,8 @@
   
   width: 100%;
   height: 100%;
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(27, 27, 27);
+  align-items: center;
 }
 
 .maintop {
@@ -59,8 +60,19 @@
 .navspan:hover{
     border: 1.5px solid rgb(156, 152, 152);
     transition: 1s ease-in-out;
-    background-color: rgb(43, 37, 37);
+    background-color: rgb(10, 168, 168)
 
+}
+.myform{
+    font-family: Roboto condensed !important;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    padding: 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
 .homeContent{
 background-color: rgb(24, 25, 63);
@@ -178,4 +190,177 @@ background-size: contain;
   color: white;
   
   font-size: 18px;
+}
+
+.progressicon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 120%;
+    padding-top: 10px;
+    padding-right: 10px;
+
+    border-radius: 8px;
+
+    background-color: rgb(70, 226, 226);
+}
+.progressicon p{
+    font-family: Roboto condensed;
+    font-size: 13px;
+  
+}
+.percenticon{
+    color:white;
+    margin-left: 30px;
+    margin-right: 10px;
+ 
+}
+.progressbar{
+width: 40%;
+height: 2px;
+border-radius: 5px;
+background-color: rgb(248, 248, 248);
+margin-top:-10px;
+
+overflow: hidden;
+
+}
+.pause{
+    margin-top: -10px;
+    background-color:rgb(35, 175, 175);
+    font-family: Roboto condensed;
+    font-size: 11px;
+    padding: 3px;
+    border-radius: 4px;
+    }
+    .userDet{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        
+
+    }
+    .userDet p{
+        color: rgb(57, 61, 61);
+        font-size: 14px;
+    }
+    .userDet p span{
+        color: aqua;
+        font-size: 15px;
+    }
+    
+.fillprogress{
+    width: 40%;
+    height: 100%;
+    background-color: green;
+}
+.Lock{
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px ;
+    background-color: rgb(70, 226, 226);
+}
+
+.frontpage{
+    width: 98%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+   
+
+}
+.frontpage p{
+    font-family: Roboto condensed;
+    font-size: 35px;
+    color: aqua;
+}
+.frontpage_c{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: auto;
+   
+    
+}
+
+.frontitem{
+    display: flex;
+    width:30%;
+    height: 250px;
+    box-shadow: 3px 4px 6px rgb(46, 45, 45);
+background-repeat: no-repeat;
+background-size: cover;
+background-color: white;
+border-radius: 5px;
+  
+}
+.frontitemhover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    background-color: rgba(48, 55, 121, 0.5);
+    transition: 1s ease-in-out;
+
+  
+}
+.frontitemhover:hover{
+ 
+    transition: 1s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5);
+
+
+  
+}
+.frontitem p{
+    color: aqua;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.signin{
+    font-family: Roboto condensed;
+
+}
+.signin span{
+
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid aqua;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.verifyme{
+    border-radius: 5px;
+    border: 1px solid aqua;
+    background-color: white;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 20px;
+    font-family: Roboto condensed;
+}
+.verifypage{
+    font-family: Roboto condensed;
+    font-size: 30px;
+    margin-top: 40px;
+    color: white;
+
+}
+.signin span:hover{
+
+    
+ 
+    background-color: aqua;
+   
+    transition: 1s ease-in-out;
 }

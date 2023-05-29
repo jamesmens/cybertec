@@ -14,7 +14,7 @@ const MongoUrl=`mongodb+srv://numbonayar:${process.env.DB_PASS}@cluster0.ulrnjef
 const Admin=require("./routers/Admin")
 
 
-const msg=require("./routers/Comments")
+
 const users=require("./routers/users")
 const geo=require("./routers/geo")
 
@@ -27,7 +27,7 @@ app.use(checkToken)
 /// middlewares
 app.use("/admin",Admin)
 app.use("/user",users)
-app.use("/comments",msg)
+
 
 app.use("/ipaddress",geo)
 

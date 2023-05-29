@@ -1,8 +1,7 @@
 const express=require("express")
 const routers=express.Router()
 const {Admin}=require("../models/users")
-const {Registermail}=require("../config/index")
-const {Contactmail}=require("../config/index")
+const { RegisterUser, sendOtp, ResetPass } = require("../config/gateway");
 
 const {Driver,User} =require("../models/users")
 const { Checkuser } = require("../middleware/auth")
@@ -41,7 +40,7 @@ email:req.body.email,
  const save_user= await user.save()
 const gmailtoken=user.mailverify()
  const token=user.generate_token()
- await Registermail(save_user.email,gmailtoken)
+ await RegisterUser(save_user.email,gmailtoken)
  res.cookie("x-auth",token). json(save_user)
 
 
@@ -107,16 +106,6 @@ routers.route("/profile")
        res.send(error)
        
    }})
-
-    ////// msg
-routers.route("/msg")
-.post(async(req,res)=>{
-    try{
-        await Contactmail(req.email,req.message)
-    }catch(error){
-        res.status(400).json({msg:error})
-    }
-})
 
 
 

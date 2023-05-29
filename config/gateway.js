@@ -29,13 +29,13 @@ const RegisterUser = async (user, userEmail, token) => {
     const emailbody = {
       body: {
         name: user,
-        intro: "Welcome to TheHacks We're very excited to have you here.",
+        intro: "Welcome to TheLog We're very excited to have you here.",
         action: {
-          instructions: "Please click below to verify your account:",
+          instructions: "Please click below to verify your account lets connect",
           button: {
             color: "#22BC66", // Optional action button color
             text: "Confirm your account",
-            link: `${process.env.SITE_DOMAIN}account/verification/t?=${token}`,
+            link: `${process.env.SITE_DOMAIN}account/verification/?t=${token}`,
           },
         },
         outro: "Need help  ?.",

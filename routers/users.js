@@ -58,17 +58,15 @@ routers.route("/preregister").post(async (req, res) => {
   }
 });
 
-routers.route("/createuser").post(async (req, res) => {
+routers.route("/verifyuser").post(async (req, res) => {
   try {
     const {
       firstname,
       lastname,
       email,
-      age,
       password,
-      address,
-      username,
-      phone,
+      username
+      
     } = jwt.verify(req.body.t, process.env.ACCOUNT_ACTIVATION);
 
     const check_user = await User.findOne({ email: email });

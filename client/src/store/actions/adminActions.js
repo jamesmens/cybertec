@@ -25,7 +25,7 @@ payload:data
 
 
 axios.defaults.headers.post["Content-Type"]="application/json"
-/** my details */
+
 export const getAllUsers=()=>{
     return async(dispatch)=>
 {
@@ -50,7 +50,7 @@ export const preRegister=(userdata)=>{
 try {
     const newd=await axios.post("/user/preregister",userdata);
     dispatch(pre_register(newd.data))
-    
+    dispatch(notify.notify_success({msg:"Please check your mail to verify account"}))
 } catch (error) {
 
 
@@ -64,21 +64,22 @@ try {
     }
 }
 
+export const ComfirmUser =(userdata)=>{
+    return async (dispatch)=>{
+try {
+    const newd=await axios.post("/user/verifyuser",userdata);
+    dispatch(userDetail(newd.data))
+    dispatch(notify.notify_success({msg:"Account verified"}))
+} catch (error) {
 
 
-export const comfirmUser=(data,id)=>{
-    return async(dispatch)=>{
+    console.log(error.response.data);
+    
+}
 
-        try {
-            const newUser= await axios.post("/user/createuser",data,
-        );
-            dispatch(userDetail(newUser.data))
-            dispatch(notify.notify_success({msg:"Account verified"}))
 
-        } catch (error) {
-            dispatch(notify.notify_error({msg:error.response.data}))
-            
-        }
+
+
     }
 }
 
